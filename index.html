@@ -484,7 +484,7 @@
                 </div>
                 
                 <div class="case-type">
-                    <h4>Большие кейсы <span class="points">5000 очков</span></h4>
+                    <h4>Большие кейсы <span class="points">2500 очков</span></h4>
                     <div class="case-input">
                         <label for="bigCases">Количество:</label>
                         <input type="number" id="bigCases" value="0" min="0">
@@ -604,8 +604,8 @@
                         <h4>🎯 Доступные кейсы после уровня ${currentLevel}</h4>
                         <p>Будут доступны на будущих уровнях:</p>
                         <p><strong>${smallCasesAvailable}</strong> обычных кейсов (${smallCasesAvailable * 1000} очков)</p>
-                        <p><strong>${bigCasesAvailable}</strong> больших кейсов (${bigCasesAvailable * 5000} очков)</p>
-                        <p><strong>Итого:</strong> ${(smallCasesAvailable * 1000 + bigCasesAvailable * 5000).toLocaleString()} дополнительных очков</p>
+                        <p><strong>${bigCasesAvailable}</strong> больших кейсов (${bigCasesAvailable * 2500} очков)</p>
+                        <p><strong>Итого:</strong> ${(smallCasesAvailable * 1000 + bigCasesAvailable * 2500).toLocaleString()} дополнительных очков</p>
                         <p><small>Кейсы на уровнях ≤ ${currentLevel} уже получены и не учитываются</small></p>
                     </div>
                 `;
@@ -675,7 +675,7 @@
             const dailyPoints = (days * dailyLimit) - todayPoints;
             
             // 2. Очки от обмена кейсов
-            const casePoints = (smallCases * 1000) + (bigCases * 5000);
+            const casePoints = (smallCases * 1000) + (bigCases * 2500);
             
             // 3. Очки от усилителей
             const boosterTotalPoints = boosters * boosterPoints;
